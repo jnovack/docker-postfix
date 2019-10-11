@@ -47,6 +47,7 @@ message_size_limit = 2097152
 smtpd_recipient_limit = 10
 smtpd_helo_required = yes
 disable_vrfy_command = yes
+mail_spool_directory = /var/spool/mail
 #
 myhostname = variable-myhostname
 mydomain = variable-mydomain
