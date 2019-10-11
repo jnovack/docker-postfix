@@ -6,6 +6,8 @@
 
 echo "postlog   unix n  -       n       -       1       postlogd" >> /etc/postfix/master.cf
 
+
+/usr/sbin/postconf maillog_file=/dev/stdout
 /usr/sbin/postmap /etc/postfix/virtual
 
 /usr/bin/tail -3 /etc/postfix/main.cf
