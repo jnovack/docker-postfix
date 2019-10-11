@@ -5,11 +5,9 @@ ARG COMMIT
 ARG VERSION
 
 ENTRYPOINT [ "/entrypoint.sh" ]
-s
 STOPSIGNAL SIGKILL
 
-VOLUME /var/mail/spool
-VOLUME /etc/postfix/virtual
+VOLUME /var/spool/mail
 
 EXPOSE 25
 
